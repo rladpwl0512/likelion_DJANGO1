@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>결과페이지</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+            @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+            h1{ font-family: 'Hanna', sans-serif;}
+            h3{ font-family: 'Hanna', sans-serif; }
+            button{ font-family: 'Hanna', sans-serif; }
+        </style>
+    </head>
+    <body>
+        <h1><p class="text-center">🧡💚💙💜💛🖤</p></h1>
+        <h1><p class="text-center">입력 숫자: {{num_1}}, {{num_2}}, {{num_3}}, {{num_4}}, {{num_5}}, {{num_6}}</p></h1>
+        <h1><p class="text-center">당첨 번호: {{list_1}}, {{list_2}}, {{list_3}}, {{list_4}}, {{list_5}}, {{list_6}} </p></h1>
+
+        <hr>
+        
+        <h1><p class="text-center text-primary">{{match}}개 맞춤</p></h1>
+        <h1><p class="text-center text-primary">{{grade}}등!!!</p></h1>
+
+
+        <br> 
+        <br>
+            <form action="{%url 'home' %}">
+            <div class="row text-center" style="width: 100%">
+ 
+                <div style="width: 30%; float:none; margin:0 auto" >
+                        <button class="btn btn btn-danger btn-lg" style="width: 100%">다시할래?</button> 
+                </div>
+            </div>
+            </form>
+    </body>
+</html>
